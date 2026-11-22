@@ -45,14 +45,21 @@ this file. Read each source before you cite it, and cite its section.
 
 1. Work in a worktree on a new branch:
    `git worktree add ../zteacher-<task> -b <task>`.
-2. Before each commit, operate the STE check on each changed
-   document.
-3. Merge to `main` with a fast forward only:
+2. Operate `scripts/setup-hooks.sh` one time in the worktree. Each
+   commit then operates the gate `scripts/check.sh`. The gate holds
+   the STE check on the doctrine documents and AGENTS.md, the
+   course state check on `examples/.zteacher/`, and the graph
+   renderer check.
+3. When the gate fails, correct the code and commit again.
+4. Merge to `main` with a fast forward only:
    `git merge --ff-only <task>`.
 
 ## Operate the hosts
 
 - pi: `pi -e <zteacher>/extension`, then `/teacher` in the project.
+  The armed state is the marker file `.zteacher/armed` in the
+  project. The two hosts read the same marker, and the course state
+  stays after disarming.
 - Claude Code: `<zteacher>/claude-mod/setup.py <project>`. Operate
   `setup.py` again after a change to `docs/voice.md`, because the
   segment holds a copy of its text.

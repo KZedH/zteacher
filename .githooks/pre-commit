@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# The zteacher commit gate. scripts/check.sh must pass on every commit.
+cd "$(git rev-parse --show-toplevel)"
+exec ./scripts/check.sh

@@ -48,9 +48,9 @@ syllabus holds.
 
 ## The minimal tree
 
-The graph is the minimal tree. It is the smallest set of nodes
-and edges that goes from what the learner holds to the
-objectives.
+The graph is the minimal tree. It holds the smallest set of
+nodes and edges. The set goes from what the learner holds to
+the objectives.
 
 - Do not put in a node that the learner holds. The `Start from`
   lines of the probe file give the held facts (see
