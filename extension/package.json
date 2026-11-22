@@ -1,0 +1,10 @@
+{
+	"name": "zteacher",
+	"private": true,
+	"type": "module",
+	"description": "zteacher: turn a project into a learning project. The /teacher command arms the skills and the graph and progress tools.",
+	"pi": {
+		"extensions": ["./index.ts"],
+		"skills": []
+	}
+}
