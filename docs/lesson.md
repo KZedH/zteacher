@@ -267,3 +267,7 @@ the row of each removed node.
 
 Do not commit the files of `.zteacher/` to the project. The plan
 files name each hole, and `main` carries no holes.
+
+The agent adds `.zteacher/` to `.git/info/exclude` of the project
+when it writes the syllabus. So a `git add .` after that cannot
+commit a plan file, and the check greps only the source files.
