@@ -262,3 +262,8 @@ The `Log` part has two types of line. Add each line at the end:
 
 When the graph changes, add a row for each new node, and remove
 the row of each removed node.
+
+## Keep the course state out of git
+
+Do not commit the files of `.zteacher/` to the project. The plan
+files name each hole, and `main` carries no holes.
