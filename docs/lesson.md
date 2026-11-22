@@ -177,7 +177,7 @@ with `# LESSON-LOCK:`, then the node id:
 ```
 
 While the lock line is in a file, the agent does not change the
-file. Each host stops each agent change to a locked file. The learner removes the lock line at the end of the lesson.
+file. The learner removes the lock line at the end of the lesson.
 
 ## During the lesson
 
