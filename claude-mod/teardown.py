@@ -70,6 +70,7 @@ def main() -> None:
     remove_hooks(target)
     for folder in ("skills", "hooks", ""):
         remove_empty(target / ".claude" / folder)
+    (target / ".zteacher" / "armed").unlink(missing_ok=True)
     print(f"zteacher disarmed in {target}. The course state in .zteacher/ stays.")
 
 

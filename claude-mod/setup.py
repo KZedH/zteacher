@@ -90,6 +90,9 @@ def main() -> None:
         link(target / ".claude" / "skills" / skill.name, skill)
     link(target / ".claude" / "hooks" / "guard_lessons.py", GUARD)
     install_hooks(target)
+    marker = target / ".zteacher" / "armed"
+    marker.parent.mkdir(parents=True, exist_ok=True)
+    marker.write_text("teacher armed")
     print(f"zteacher armed in {target}")
 
 
