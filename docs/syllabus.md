@@ -48,9 +48,9 @@ An objective is a measurable condition that the learner will
 hold at the end of the course. Write each objective as a task
 that the learner can do. Then a test can show that the learner
 holds it. For example, this is an objective:
-`Write a function that computes the return in one pass`.
+`Write a function that gives the last n items of a list, with a slice`.
 This is not an objective, because no test can show it:
-`Understand returns`.
+`Understand lists`.
 
 A goal such as "learn reinforcement learning" can mean many
 different courses. Give the learner questions until each

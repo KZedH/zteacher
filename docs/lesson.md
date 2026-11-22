@@ -173,7 +173,7 @@ The lock line is the first line of a file with holes. It starts
 with `# LESSON-LOCK:`, then the node id:
 
 ```python
-# LESSON-LOCK: discounted-return
+# LESSON-LOCK: list-slice
 ```
 
 While the lock line is in a file, the agent does not change the
@@ -235,13 +235,13 @@ topological order. This example shows the format.
 
 | Node | Status | Planned | Lesson open | Check passed |
 | --- | --- | --- | --- | --- |
-| reward-signal | check-passed | 2026-11-22 | 2026-11-22 | 2026-11-23 |
-| discounted-return | planned | 2026-11-22 | | |
+| list-index | check-passed | 2026-11-22 | 2026-11-22 | 2026-11-23 |
+| list-slice | planned | 2026-11-22 | | |
 
 ## Log
 
-- 2026-11-23 check reward-signal: pass. 3 of 3 hole tests pass.
-- 2026-11-23 merge lesson-reward-signal to main: 1a2b3c4
+- 2026-11-23 check list-index: pass. 3 of 3 hole tests pass.
+- 2026-11-23 merge lesson-list-index to main: 1a2b3c4
 ```
 
 A node has one of three statuses:

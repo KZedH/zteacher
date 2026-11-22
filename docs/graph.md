@@ -42,7 +42,7 @@ syllabus alone. Read each section before you write a node that
 cites it.
 
 Write each `cite` as the title of a resource of the syllabus,
-then the section: `Sutton and Barto 2nd ed., section 3.3`. The
+then the section: `The Python Tutorial, section 3.1.3`. The
 cite must name a resource that the `Resources` part of the
 syllabus holds.
 
@@ -119,10 +119,10 @@ An edge line has the keys `type`, `from`, and `to`. Write the node
 lines first, then the edge lines.
 
 ```jsonl
-{"id": "reward-signal", "topic": "Reward signal", "proposition": "At each step the environment gives the agent one scalar reward.", "cite": "Sutton and Barto 2nd ed., section 3.2"}
-{"id": "discounted-return", "topic": "Discounted return", "proposition": "The return is the sum of the future rewards, each multiplied by gamma to the power of its delay.", "cite": "Sutton and Barto 2nd ed., section 3.3"}
-{"type": "requires", "from": "reward-signal", "to": "discounted-return"}
+{"id": "list-index", "topic": "List index", "proposition": "A list gives the item at index i, and the first index is 0.", "cite": "The Python Tutorial, section 3.1.3"}
+{"id": "list-slice", "topic": "List slice", "proposition": "The slice a[i:j] is a new list of the items from index i up to index j, without the item at index j.", "cite": "The Python Tutorial, section 3.1.3"}
+{"type": "requires", "from": "list-index", "to": "list-slice"}
 ```
 
-The edge reads: the learner must hold `reward-signal` before
-`discounted-return`.
+The edge reads: the learner must hold `list-index` before
+`list-slice`.
