@@ -1,0 +1,7 @@
+#!/bin/sh
+# Reject Claude attribution in the commit message.
+# The check is per machine: ~/.config/git/attribution-check.
+# On a machine without it, this hook does nothing.
+check="$HOME/.config/git/attribution-check"
+[ -x "$check" ] || exit 0
+exec "$check" msg "$1"

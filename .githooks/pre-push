@@ -1,0 +1,7 @@
+#!/bin/sh
+# Reject a push of commits that carry Claude attribution.
+# The check is per machine: ~/.config/git/attribution-check.
+# On a machine without it, this hook does nothing.
+check="$HOME/.config/git/attribution-check"
+[ -x "$check" ] || exit 0
+exec "$check" push
